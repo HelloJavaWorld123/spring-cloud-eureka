@@ -10,6 +10,8 @@ eureka:
       defaultZone: http://121.40.214.119:8088/eureka/
   server:
     enable-self-preservation: false
+  instance:
+    prefer-ip-address: true
 spring:
   boot:
     admin:
@@ -20,3 +22,5 @@ spring:
         password: admin
         auto-deregistration: true
         auto-registration: true
+        instance:
+          prefer-ip: true
