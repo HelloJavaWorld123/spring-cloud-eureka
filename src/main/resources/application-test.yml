@@ -1,4 +1,22 @@
 eureka:
   client:
+    register-with-eureka: false
+    fetch-registry: false
+    healthcheck:
+      enabled: true
+    refresh:
+      enable: true
     service-url:
-      defaultZone: http://127.0.0.1:8088/eureka/
+      defaultZone: http://121.40.214.119:8088/eureka/
+  server:
+    enable-self-preservation: false
+spring:
+  boot:
+    admin:
+      client:
+        enabled: true
+        url: http://121.40.214.119:8089
+        username: admin
+        password: admin
+        auto-deregistration: true
+        auto-registration: true

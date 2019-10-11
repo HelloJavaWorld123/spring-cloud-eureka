@@ -1,0 +1,27 @@
+spring:
+  boot:
+    admin:
+      client:
+        enabled: true
+        url: http://127.0.0.1:8089
+        username: admin
+        password: admin
+        auto-registration: true
+        auto-deregistration: true
+        instance:
+          prefer-ip: true
+          metadata:
+            username: admin
+            password: admin
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    healthcheck:
+      enabled: true
+    refresh:
+      enable: true
+    service-url:
+      defaultZone: http://127.0.0.1:8088/eureka/
+  server:
+    enable-self-preservation: false
