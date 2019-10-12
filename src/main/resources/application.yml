@@ -3,6 +3,7 @@ server:
 spring:
   application:
     name: application-center
+
 info:
   name: @name@
   version: @project.version@
