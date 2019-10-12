@@ -9,7 +9,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 /**
  * @author admin
  */
-@EnableWebSecurity
+@EnableWebSecurity(debug = true)
 @EnableEurekaServer
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 public class CenterApplication {
