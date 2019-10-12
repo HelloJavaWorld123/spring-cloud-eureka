@@ -12,8 +12,14 @@ management:
       enabled: true
       show-details: always
     shutdown:
-      enabled: false
+      enabled: true
+    logfile:
+      enabled: true
+      external-file: ${logging.path}/server/server_error.log
   endpoints:
     web:
+      exposure:
+        include: "*"
+    jmx:
       exposure:
         include: "*"
