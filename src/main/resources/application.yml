@@ -2,7 +2,7 @@ server:
   port: 8088
 spring:
   application:
-    name: application-center
+    name: application-monitor-center
   security:
     user:
       name: admin
